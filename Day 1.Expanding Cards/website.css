@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&wght@400;700&display=swap');
 
 * {
 box-sizing: border-box;
 }
 
-body{
+body {
 font-family: 'Muli',sans-serif;
 display: flex;
-flex-direction: column;
 align-items: center;
 justify-content: center;
 height: 100vh;
@@ -16,16 +15,17 @@ overflow: hidden;
 }
 
 .container{
-display: flexbox;
+display: flex;
 width: 90vw;
 }
 
-.panel{
-background-size: auto 100%;
+.panel {
+background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 height: 80vh;
-color: #ffffff;
+border-radius: 50px;
+color: #000000;
 cursor: pointer;
 flex: 0.5;
 margin: 10px;
@@ -43,16 +43,17 @@ opacity: 0;
 }
 
 .panel.active{
-    flex: 5;
+flex: 5;
 }
 
 .panel.active h3{
-    opacity: 1;
+opacity: 1;
+transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media(max-width: 480px){
 .container{
-    width: 100vw;
+width: 100vw;
 }
 
 .panel:nth-of-type(4),
