@@ -4,12 +4,13 @@
 --line-border-fill:#b61ff1;
 --line-border-empty:#e0e0e0;
 }
+
 *{
 box-sizing: border-box;
 }
 
 body{
-background-color: #f6f7f6;
+background-color: #f6f7fb;
 font-family: 'Muli',sans-serif;
 display: flex;
 align-items:center;
@@ -23,7 +24,7 @@ margin: 0;
 text-align: center;
 }
 
-.process-container{
+.progress-container{
 display: flex;
 justify-content: space-between;
 position: relative;
@@ -33,16 +34,16 @@ width: 350px;
 }
 
 .progress-container::before{
-    content: '';
-    background-color: var(--line-border-empty);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    height: 4px;
-    width: 100%;
-    z-index: -1;
-    }
+content: "";
+background-color: #ece8e8;
+position: absolute;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+height: 4px;
+width: 100%;
+z-index: -1;
+}
 
 .progress{
 background-color:var(--line-border-fill);
@@ -86,7 +87,7 @@ font-size: 14px;
 }
 
 .btn.active{
-    transform: scale(0.98);
+transform: scale(0.98);
 }
 
 .btn-focus{
@@ -94,6 +95,6 @@ outline: 0;
 }
 
 .btn:disabled{
-    background-color: var(--line-border-fill);
-    cursor: not-allowed;
+background-color: var(--line-border-fill);
+cursor: not-allowed;
 }
