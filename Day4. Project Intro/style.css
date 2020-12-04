@@ -44,14 +44,14 @@ transition: transform 0.3s ease;
 }
 
 .btn:focus,
-.input:focus{
+.input:focus {
 outline: none;
 }
 
-.search .active .input{
+.search.active .input{
 width: 200px;
 }
 
-.search .active .btn{
+.search.active .btn{
 transform: translateX(198px);
 }
