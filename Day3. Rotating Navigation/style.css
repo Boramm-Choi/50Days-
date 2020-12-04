@@ -8,7 +8,7 @@ body{
 font-family: 'Lato',sans-serif;
 background-color: rgb(152, 59, 196);
 color: #222;
-overflow: hidden;
+overflow-x: hidden;
 margin: 0;
 }
 
@@ -77,7 +77,7 @@ transition-delay: 0.3s;
 
 
 
-.nav{
+nav{
 position: fixed;
 bottom: 40px;
 left: 0;
@@ -91,7 +91,7 @@ padding-left: 30px;
 
 nav ul li{
 text-transform: uppercase;
-color: #fff7f7;
+color: #222;
 margin: 40px 0;
 transform: translateX(-100%);
 transition: transform 0.4s ease-in;
