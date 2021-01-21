@@ -26,7 +26,6 @@ const changeSlide = (directon) => {
             activeSlideIndex = slidesLength - 1
     }
 
-    slideRight.style.transform = `translateY(-${activeSlideIndex * sliderHeight}px)`
-    slideLeft.style.transform = `translateY(${activeSlideIndex * sliderHeight}px)`
-}
+    slideRight.style.transform = `translateY (-${activeSlideIndex * sliderHeight} px)`
+    slideLeft.style.transform = `translateY (${activeSlideIndex * sliderHeight} px)`
 }
